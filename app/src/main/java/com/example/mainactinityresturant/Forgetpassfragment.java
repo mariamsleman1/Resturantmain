@@ -31,6 +31,7 @@ public class Forgetpassfragment extends Fragment {
     private ImageButton email;
     private  ImageButton massege;
     public Forgetpassfragment() {
+        instalize();
         // Required empty public constructor
     }
 
@@ -99,5 +100,10 @@ public class Forgetpassfragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_forgetpassfragment, container, false);
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+      instalize();
     }
 }
